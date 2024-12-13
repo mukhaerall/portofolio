@@ -5,6 +5,10 @@
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const body = document.body;
 
+document.querySelector('.hamburger-menu').addEventListener('click', function() {
+    document.querySelector('header ul').classList.toggle('ul-active');
+});
+
 // navbar muncul dan hilang
 hamburgerMenu.addEventListener('click', function () {
     const navigationBar = document.querySelector('header ul');

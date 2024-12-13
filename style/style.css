@@ -143,6 +143,11 @@ header ul li a:hover {
     align-items: first baseline; /* Memusatkan gambar secara vertikal */
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .field-image-home img {
     width: 100%; /* Atur lebar gambar agar sesuai dengan lebar kontainer */
     height: auto; /* Mempertahankan rasio aspek gambar */
