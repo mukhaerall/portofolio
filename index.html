@@ -4,421 +4,442 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mukhaeral's Portofolio</title>
+    <title>Mukhaeral | Backend-focused Full Stack Developer in Makassar</title>
+    <meta name="description" content="Backend-focused full stack developer in Makassar, Indonesia. Web applications, REST APIs, and integrations with PHP, Laravel, and MySQL.">
+    <meta name="author" content="Mukhaeral">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#F3EEE4">
+    <link rel="canonical" href="https://mukhaerall.github.io/portofolio/">
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- <link rel="stylesheet" href="fontawesome/css/all.css"> -->
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Open Graph (WhatsApp, LinkedIn, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mukhaeral">
+    <meta property="og:title" content="Mukhaeral | Backend-focused Full Stack Developer">
+    <meta property="og:description" content="Web applications, backend systems, and reliable APIs with PHP, Laravel, and MySQL.">
+    <meta property="og:url" content="https://mukhaerall.github.io/portofolio/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://mukhaerall.github.io/portofolio/img/og-image.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Mukhaeral, Backend-focused Full Stack Developer. Makassar, Indonesia.">
 
-    <!-- AOS ANIMATION -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mukhaeral | Backend-focused Full Stack Developer">
+    <meta name="twitter:description" content="Web applications, backend systems, and reliable APIs with PHP, Laravel, and MySQL.">
+    <meta name="twitter:image" content="https://mukhaerall.github.io/portofolio/img/og-image.png">
+    <meta name="twitter:image:alt" content="Mukhaeral, Backend-focused Full Stack Developer. Makassar, Indonesia.">
 
-    <!-- my style css -->
-    <link rel="stylesheet" href="style/style.css">
-    <script type="module" src="js/all.js"></script>
-    <script src="js/all.js"></script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230F5C57'/%3E%3Cpath d='M16 46V18h6l10 17 10-17h6v28h-6V29L32 44 22 29v17z' fill='%23F3EEE4'/%3E%3C/svg%3E">
 
-    <!-- google font -->
+    <!-- Fonts: Fraunces (display), IBM Plex Sans (body), IBM Plex Mono (data labels) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mukhaeral",
+        "jobTitle": "Backend-focused Full Stack Developer",
+        "url": "https://mukhaerall.github.io/portofolio/",
+        "address": { "@type": "PostalAddress", "addressLocality": "Makassar", "addressCountry": "ID" },
+        "knowsAbout": ["PHP", "Laravel", "MySQL", "REST APIs", "JavaScript", "Next.js"],
+        "sameAs": [
+            "https://github.com/mukhaerall",
+            "https://www.linkedin.com/in/heral-4009b130b/",
+            "https://www.instagram.com/mukhaerall/",
+            "https://www.tiktok.com/@mukhaeral"
+        ]
+    }
+    </script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <!-- HOME -->
-    <section class="home" id="home">
-        <header>
-            <h2>Mukhaeral</h2>
-            <ul class="">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#skill">Skill</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#certification">Certification</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <!-- HEADER / NAV -->
+    <header class="site-header">
+        <div class="bar wrap">
+            <a class="brand" href="#home">Mukhaeral</a>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#project">Work</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certification">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- HOME -->
+        <section class="hero" id="home">
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Mukhaeral, Makassar, Indonesia</p>
+                    <h1><span class="sr">Mukhaeral: </span>Building web applications, backend systems, and reliable APIs.</h1>
+                    <p class="role">Backend-focused Full Stack Developer</p>
+                    <p class="lede">I build and maintain web applications, REST APIs, and service integrations with PHP, Laravel, and MySQL.</p>
+                    <div class="actions">
+                        <a class="btn btn-primary" href="#project">View selected work</a>
+                        <a class="btn" href="mailto:heral.rex@gmail.com">Email me</a>
+                    </div>
+                </div>
+                <aside class="index" aria-label="At a glance">
+                    <dl>
+                        <div><dt>Focus</dt><dd>PHP, Laravel, REST APIs</dd></div>
+                        <div><dt>Database</dt><dd>MySQL</dd></div>
+                        <div><dt>Currently</dt><dd>Web Developer Intern, Government Institution (Name Withheld)</dd></div>
+                        <div><dt>Studying</dt><dd>Informatics Engineering, Universitas Dipa Makassar</dd></div>
+                    </dl>
+                </aside>
+            </div>
+        </section>
+        <!-- HOME -->
+
+        <!-- EXPERIENCE -->
+        <section class="sec experience" id="experience" aria-labelledby="experience-title">
+            <div class="wrap">
+                <h2 class="sec-title" id="experience-title">Experience</h2>
+                <div class="exp-list">
+
+                    <article class="exp-item">
+                        <div class="exp-date">
+                            <p>Sep 2026 to present</p>
+                        </div>
+                        <div class="exp-body">
+                            <h3>Web Developer Intern</h3>
+                            <p class="exp-org">Government Institution (Name Withheld)</p>
+                            <ul class="exp-points">
+                                <li>Maintain and improve the institution’s main website, originally built by another party: adding functionality, modifying code, and fixing issues.</li>
+                                <li>Independently designed and built four internal web applications supporting IT asset and device management, covering backend functionality, databases, debugging, and ongoing maintenance.</li>
+                                <li>Assist with computer, printer, and server troubleshooting and IT infrastructure maintenance.</li>
+                            </ul>
+                            <p class="exp-stack">Laravel, PHP, MySQL, JavaScript, HTML, CSS, Bootstrap</p>
+                            <p class="exp-note">These systems are internal, so no names, links, or screenshots are shown.</p>
+                        </div>
+                    </article>
+
+                    <article class="exp-item">
+                        <div class="exp-date">
+                            <p>Jan 2025 to present</p>
+                            <p class="exp-date-sub">Project delivered May 2025</p>
+                        </div>
+                        <div class="exp-body">
+                            <h3>Backend Developer, project-based</h3>
+                            <p class="exp-org">E-Commerce Platform (Client Name Withheld)</p>
+                            <ul class="exp-points">
+                                <li>Worked with a development team to build the backend of an e-commerce website in native PHP, integrated with a Next.js frontend.</li>
+                                <li>Developed REST APIs, managed the MySQL database, and worked on ordering, order management, and transaction status features.</li>
+                                <li>Integrated the Midtrans payment gateway and shipping service functionality.</li>
+                                <li>Continue to maintain the platform after delivery: bug fixes, feature updates, database maintenance, and deployment and maintenance on a Linux VPS.</li>
+                            </ul>
+                            <p class="exp-stack">Native PHP, Next.js, MySQL, REST APIs, Midtrans, Linux VPS</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!-- EXPERIENCE -->
+
+        <!-- PROJECT -->
+        <section class="sec project" id="project" aria-labelledby="project-title">
+            <div class="wrap">
+                <h2 class="sec-title" id="project-title">Selected Work</h2>
+
+                <!-- Professional work -->
+                <div class="work-group">
+                    <h3 class="group-title">Professional work</h3>
+
+                    <article class="work">
+                        <p class="work-num" aria-hidden="true">01</p>
+                        <div class="work-main">
+                            <p class="work-cat">Professional project, team contribution</p>
+                            <h4 class="work-title">E-Commerce Platform <span>Backend Development</span></h4>
+                            <p class="work-desc">The backend of an e-commerce website, built with a development team and connected to a Next.js frontend.</p>
+                            <dl class="facts">
+                                <div><dt>My role</dt><dd>Backend Developer, project-based. Jan 2025 to present; project delivered May 2025.</dd></div>
+                                <div><dt>Technologies</dt><dd>Native PHP, MySQL, REST APIs, Next.js (integration), Midtrans, Linux VPS</dd></div>
+                            </dl>
+                            <details class="case">
+                                <summary>Case study<span class="sr">: E-Commerce Platform</span></summary>
+                                <div class="case-body">
+                                    <dl>
+                                        <div><dt>Overview</dt><dd>A team-built e-commerce website. I worked on the backend in native PHP, which serves REST APIs to a Next.js frontend.</dd></div>
+                                        <div><dt>Context</dt><dd>An online store has to take orders, follow their status, accept payments, and work with a shipping service. The backend ties those pieces together behind one API.</dd></div>
+                                        <div><dt>My role</dt><dd>One of the developers on the team, responsible for backend work: REST APIs, the MySQL database, and the ordering, order management, and transaction status features. After delivery I continued to maintain the platform.</dd></div>
+                                        <div><dt>Technical approach</dt><dd>A separate backend and frontend. The native PHP backend exposes REST APIs, MySQL stores the data, the Next.js frontend consumes the APIs, and Midtrans and a shipping service are integrated on the backend. The application runs on a Linux VPS.</dd></div>
+                                        <div><dt>Key functionality</dt><dd>
+                                            <ul>
+                                                <li>Ordering and order management</li>
+                                                <li>Transaction status handling</li>
+                                                <li>Midtrans payment gateway integration</li>
+                                                <li>Shipping service integration</li>
+                                                <li>Deployment and maintenance on a Linux VPS: bug fixes, feature updates, and database maintenance</li>
+                                            </ul></dd></div>
+                                    </dl>
+                                    <figure class="diagram">
+                                        <ol class="flow">
+                                            <li>Next.js frontend</li>
+                                            <li>REST API<br><small>Native PHP</small></li>
+                                            <li>MySQL database</li>
+                                        </ol>
+                                        <p class="diagram-extra">The API also connects to Midtrans for payments and to a shipping service.</p>
+                                        <figcaption>Simplified, generic diagram. Not a screenshot of the real system.</figcaption>
+                                    </figure>
+                                    <p class="case-note">The client name, repository, live URL, and screenshots are not published.</p>
+                                </div>
+                            </details>
+                        </div>
+                    </article>
+
+                    <article class="work">
+                        <p class="work-num" aria-hidden="true">02</p>
+                        <div class="work-main">
+                            <p class="work-cat">Professional project, independent development</p>
+                            <h4 class="work-title">Internal IT Asset &amp; Device Management Systems</h4>
+                            <p class="work-desc">Four internal web applications supporting IT asset and device management at a government institution (name withheld). They are not public.</p>
+                            <dl class="facts">
+                                <div><dt>My role</dt><dd>Sole designer and developer. Sep 2026 to present, as a Web Developer Intern.</dd></div>
+                                <div><dt>Technologies</dt><dd>Laravel, PHP, MySQL, JavaScript, HTML, CSS, Bootstrap</dd></div>
+                            </dl>
+                            <details class="case">
+                                <summary>Case study<span class="sr">: Internal IT Asset and Device Management Systems</span></summary>
+                                <div class="case-body">
+                                    <dl>
+                                        <div><dt>Overview</dt><dd>A set of four internal web applications built for the IT operations of a government institution. They are used internally only.</dd></div>
+                                        <div><dt>Context</dt><dd>Internal tools for IT asset and device management, built for the institution’s own staff and not available to the public.</dd></div>
+                                        <div><dt>My role</dt><dd>I designed and built all four applications independently, and handle their debugging and ongoing maintenance.</dd></div>
+                                        <div><dt>Technical approach</dt><dd>Laravel and PHP handle the backend logic and data access over a MySQL database. The interfaces use HTML, CSS, Bootstrap, and JavaScript.</dd></div>
+                                        <div><dt>Technical focus</dt><dd>Backend functionality, relational database design, debugging, and application maintenance.</dd></div>
+                                        <div><dt>Key functionality</dt><dd>Described at a high level only: IT asset lifecycle and internal support workflows.</dd></div>
+                                    </dl>
+                                    <figure class="diagram">
+                                        <ol class="flow">
+                                            <li>Browser interface<br><small>HTML, CSS, Bootstrap, JavaScript</small></li>
+                                            <li>Application logic<br><small>Laravel, PHP</small></li>
+                                            <li>Relational data<br><small>MySQL</small></li>
+                                        </ol>
+                                        <figcaption>Generic diagram with no real data. Not a screenshot of any actual system.</figcaption>
+                                    </figure>
+                                    <p class="case-note">Institution name, application names, screenshots, links, source code, and infrastructure details are withheld because the systems are internal.</p>
+                                </div>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Personal projects -->
+                <div class="work-group">
+                    <h3 class="group-title">Personal projects</h3>
+
+                    <article class="work">
+                        <p class="work-num" aria-hidden="true">03</p>
+                        <div class="work-main">
+                            <div class="work-head">
+                                <div>
+                                    <p class="work-cat">Personal project, independent development</p>
+                                    <h4 class="work-title">Mukhaeral Residence <span>Promotion Landing Page</span></h4>
+                                    <p class="work-desc">A promotional landing page that introduces the products of Mukhaeral Residence.</p>
+                                </div>
+                                <a class="work-shot" href="https://mukhaerall.github.io/residence.github.io/mukhaeral-residence-property/" tabindex="-1" aria-hidden="true">
+                                    <img src="img/Cuplikan%20layar%202024-12-09%20232421.png" alt="Screenshot of the Mukhaeral Residence promotion landing page" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <dl class="facts">
+                                <div><dt>My role</dt><dd>Sole developer</dd></div>
+                                <div><dt>Technologies</dt><dd>HTML, CSS, JavaScript</dd></div>
+                            </dl>
+                            <p class="work-links"><a href="https://mukhaerall.github.io/residence.github.io/mukhaeral-residence-property/">Visit the live site<span class="sr"> of Mukhaeral Residence</span></a></p>
+                            <details class="case">
+                                <summary>Case study<span class="sr">: Mukhaeral Residence</span></summary>
+                                <div class="case-body">
+                                    <dl>
+                                        <div><dt>Overview</dt><dd>A static promotional website that introduces the products of Mukhaeral Residence.</dd></div>
+                                        <div><dt>My role</dt><dd>I developed it independently.</dd></div>
+                                        <div><dt>Technical approach</dt><dd>A static site in HTML, CSS, and vanilla JavaScript. It has no database and no backend.</dd></div>
+                                        <div><dt>Technology stack</dt><dd>HTML, CSS, vanilla JavaScript, hosted on GitHub Pages.</dd></div>
+                                        <div><dt>Key functionality</dt><dd>A landing page for promotion and product introduction.</dd></div>
+                                    </dl>
+                                </div>
+                            </details>
+                        </div>
+                    </article>
+
+                    <article class="work">
+                        <p class="work-num" aria-hidden="true">04</p>
+                        <div class="work-main">
+                            <div class="work-head">
+                                <div>
+                                    <p class="work-cat">Personal project</p>
+                                    <h4 class="work-title">My Social Media Website</h4>
+                                    <p class="work-desc">A profile website with information about me and links to my social media accounts.</p>
+                                </div>
+                                <a class="work-shot" href="https://mukhaerall.github.io/linktree/Linktree/" tabindex="-1" aria-hidden="true">
+                                    <img src="img/Cuplikan%20layar%202024-12-09%20213313.png" alt="Screenshot of the My Social Media website" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <dl class="facts">
+                                <div><dt>My role</dt><dd>Developer</dd></div>
+                                <div><dt>Technologies</dt><dd>HTML, CSS</dd></div>
+                            </dl>
+                            <p class="work-links"><a href="https://mukhaerall.github.io/linktree/Linktree/">Visit the live site<span class="sr"> of My Social Media Website</span></a></p>
+                            <details class="case">
+                                <summary>Case study<span class="sr">: My Social Media Website</span></summary>
+                                <div class="case-body">
+                                    <dl>
+                                        <div><dt>Overview</dt><dd>A profile page that gathers my social media links in one place.</dd></div>
+                                        <div><dt>Technology stack</dt><dd>HTML and CSS, hosted on GitHub Pages.</dd></div>
+                                        <div><dt>Key functionality</dt><dd>A profile with information and links that lead to my social media accounts.</dd></div>
+                                    </dl>
+                                </div>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- PROJECT -->
+
+        <!-- SKILLS -->
+        <section class="sec skill" id="skill" aria-labelledby="skill-title">
+            <div class="wrap">
+                <h2 class="sec-title" id="skill-title">Skills</h2>
+                <dl class="skills">
+                    <div class="skill-row skill-lead">
+                        <dt>Backend and APIs</dt>
+                        <dd><ul><li>Native PHP</li><li>Laravel</li><li>REST APIs</li></ul></dd>
+                    </div>
+                    <div class="skill-row skill-lead">
+                        <dt>Database</dt>
+                        <dd><ul><li>MySQL</li></ul></dd>
+                    </div>
+                    <div class="skill-row">
+                        <dt>Core web technologies</dt>
+                        <dd><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Next.js</li><li>Bootstrap</li></ul></dd>
+                    </div>
+                    <div class="skill-row">
+                        <dt>Tools and infrastructure</dt>
+                        <dd><ul><li>Git</li><li>GitHub</li><li>Linux VPS</li><li>aaPanel</li><li>Docker</li><li>n8n</li><li>CI/CD</li><li>Postman</li></ul></dd>
+                    </div>
+                    <div class="skill-row">
+                        <dt>Also used</dt>
+                        <dd><ul><li>React.js</li><li>Tailwind CSS</li><li>Node.js</li><li>Python</li><li>Go (Golang)</li><li>C++</li></ul></dd>
+                    </div>
+                    <div class="skill-row">
+                        <dt>Introductory experience</dt>
+                        <dd><ul><li>Flask (one-hour introductory course)</li></ul></dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+        <!-- SKILLS -->
+
+        <!-- ABOUT -->
+        <section class="sec about" id="about" aria-labelledby="about-title">
+            <div class="wrap">
+                <h2 class="sec-title" id="about-title">About</h2>
+                <div class="about-grid">
+                    <div class="container-about">
+                        <p>I’m a backend-focused full stack developer based in Makassar, Indonesia. I build and maintain web applications, REST APIs, and service integrations, mostly with PHP, Laravel, and MySQL, and I handle the debugging, deployment, and maintenance that keep them running on a Linux VPS.</p>
+                        <p>My experience comes from two kinds of work: contributing to a team-built e-commerce platform, including payment and shipping integrations, and independently building internal applications for a government institution. I keep learning by building, and curiosity about how systems work is what drew me to web development.</p>
+                    </div>
+                    <aside class="edu" aria-labelledby="edu-title">
+                        <h3 id="edu-title">Education</h3>
+                        <p class="edu-name">Universitas Dipa Makassar</p>
+                        <p>Bachelor’s Degree in Informatics Engineering (in progress)</p>
+                        <p class="edu-meta">5th semester. Expected graduation: 2028.</p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT -->
+
+        <!-- CERTIFICATION -->
+        <section class="sec certification" id="certification" aria-labelledby="certification-title">
+            <div class="wrap">
+                <h2 class="sec-title" id="certification-title">Certifications</h2>
+                <ul class="cert-list">
+                    <li class="cert-item">
+                        <div class="cert-date">
+                            <p>Dec 2025 to Dec 2028</p>
+                        </div>
+                        <div class="cert-body">
+                            <h3>Junior Network Administrator</h3>
+                            <p class="cert-issuer">LSP BPPTIK, BNSP</p>
+                        </div>
+                    </li>
+                    <li class="cert-item cert-minor">
+                        <div class="cert-date">
+                            <p>1 Dec 2024</p>
+                        </div>
+                        <div class="cert-body">
+                            <h3>Introduction to Flask</h3>
+                            <p class="cert-issuer">MySkill. One-hour online course.</p>
+                            <button type="button" class="cert-open" data-dialog="cert-flask" aria-label="View certificate: Introduction to Flask, MySkill">
+                                <img src="img/download.jpeg" alt="Certificate of Course Completion: Introduction to Flask, awarded to Mukhaeral by MySkill" loading="lazy" decoding="async">
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <dialog id="cert-flask" aria-label="Introduction to Flask certificate">
+                    <img src="img/download.jpeg" alt="Certificate of Course Completion: Introduction to Flask, awarded to Mukhaeral by MySkill">
+                    <button type="button" class="btn" data-close>Close</button>
+                </dialog>
+            </div>
+        </section>
+        <!-- CERTIFICATION -->
+
+        <!-- CONTACT -->
+        <section class="sec contact" id="contact" aria-labelledby="contact-title">
+            <div class="wrap">
+                <h2 class="sec-title" id="contact-title">Contact</h2>
+                <p class="contact-lede">The best way to reach me is by email.</p>
+                <a class="mail" href="mailto:heral.rex@gmail.com">heral.rex@gmail.com</a>
+                <!-- Shown by script.js only when the browser can copy to the clipboard. -->
+                <div class="copy-row" hidden>
+                    <button type="button" class="btn" id="copy-email" data-copy="heral.rex@gmail.com">Copy email address</button>
+                    <span class="copy-status" role="status" aria-live="polite"></span>
+                </div>
+                <ul class="contact-links">
+                    <li><a href="https://github.com/mukhaerall" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/heral-4009b130b/" target="_blank" rel="noopener">LinkedIn</a></li>
+                </ul>
+                <!-- Download CV button: hidden until an approved public CV is available -->
+                <a class="btn cv-btn" id="cv-download" hidden>Download CV</a>
+            </div>
+        </section>
+        <!-- CONTACT -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="wrap foot">
+            <p>© 2026 Mukhaeral. Makassar, Indonesia.</p>
+            <ul class="foot-primary">
+                <li><a href="https://github.com/mukhaerall" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/heral-4009b130b/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="mailto:heral.rex@gmail.com">Email</a></li>
             </ul>
-            <i class="fa-solid fa-bars fa-2x hamburger-menu"></i>
-        </header>
-        <div class="section-home">
-            <div class="field-text-home">
-                <h1>Hii, I am <br> <span>Mukhaeral</span></h1>
-                <h3>Back End Developer <span>| Informatics Engineering Student </span></h3>
-            </div>
-            <div class="field-image-home">
-                <img src="img/photo.jpg" alt="">
-            </div>
+            <ul class="foot-secondary">
+                <li><a href="https://www.instagram.com/mukhaerall/" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@mukhaeral" target="_blank" rel="noopener">TikTok</a></li>
+            </ul>
+            <a class="to-top" href="#home">Back to top</a>
         </div>
-        <a class="swipe-up" href="#about">Swipe Up <i class="fa-solid fa-arrow-down arrow-swipeup"></i></a>
-    </section>
-    <!-- HOME -->
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-        <div class="container-about" data-aos="fade-up" data-aos-duration="1500">
-            <h1>About <span>Me</span></h1>
-            <p>I am a student at Dipa Makassar university majoring in Informatics Engineering. For
-                now I live in Makassar city, South Sulawesi province. I am a person who likes to learn and has a high curiosity,
-                especially in the field of technology. My journey in the world of technology is driven by curiosity and
-                the urge to continue to improve my abilities. Until finally, I found one of the fun parts of technology
-                which is web development.</p>
-            <p>I have taken several courses and also completed several projects that must be
-                completed in the course related to web development and also databases. I am eager to explore innovative
-                solutions and contribute to impactful projects. As my studies progress, I am excited to connect with
-                professionals in the industry and expand my knowledge in web development and beyond.</p>
-        </div>
-    </section>
-    <!-- ABOUT -->
-
-    <!-- SKILLS -->
-    <section class="skill" id="skill">
-        <h1>My <span>Skills</span></h1>
-        <div class="container-image-skill">
-            <div class="field-image-skill" data-aos="flip-left">
-                <img src="img/logo_html.png" alt="" class="image-skill">
-                <span>HTML</span>
-            </div>
-            <div class="field-image-skill">
-                <img src="img/logo_css.png" alt="" class="image-skill">
-                <span>CSS</span>
-            </div>
-            <div class="field-image-skill">
-                <img src="img/logo_javascript.png" alt="" class="image-skill">
-                <span>JAVASCRIPT</span>
-            </div>
-            <div class="field-image-skill">
-                <img src="img/c-logo-icon-28389.png" alt="" class="image-skill">
-                <span>C++</span>
-            </div>
-            <div class="field-image-skill">
-                <img src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png" alt="" class="image-skill">
-                <span>PYTHON</span>
-            </div>
-            <div class="field-image-skill">
-                <img src="img/Flask.png" alt="" class="image-skill">
-                <span>FLASK</span>
-            </div>
-            <div class="field-image-skill">
-                <img src="img/logo_sql.png" alt="" class="image-skill">
-                <span>SQL</span>
-            </div>
-            <div class="field-image-skill">
-                <img src="img/logo_github.png" alt="" class="image-skill">
-                <span>GITHUB</span>
-            </div>
-        </div>
-    </section>
-    <!--SKILLS -->
-
-    <!-- PROJECT -->
-    <section class="project" id="project">
-        <h1>Pro<span>ject</span></h1>
-
-        <div class="container-project">
-
-            <div class="field-project">
-                <a href="https://mukhaerall.github.io/residence.github.io/mukhaeral-residence-property/" class="link-to-project">
-                    <img src="img/Cuplikan layar 2024-12-09 232421.png" alt="">
-                    <div class="field-text-project">
-                        <h3>Mukhaeral Residence <span>Promotion Landing Page</span></h3>
-                        <p class="description-project">Create a landing page for promotional and introduce the
-                            products owned by Mukhaeral.</p>
-                    </div>
-                </a>
-                <div class="technology-project">
-                    <a href="">HTML</a>
-                    <a href="">CSS</a>
-                    <a href="">JavaScript</a>
-                </div>
-            </div>
-
-
-
-            <!-- <div class="field-project">
-                <a href="" class="link-to-project">
-                    <img src="img/project_websekolah.png" alt="">
-                    <div class="field-text-project">
-                        <h3>SMK Dharma Bakti <span>Registration Form</span></h3>
-                        <p class="description-project">Create web information about SMK Dharma Bakti and create a
-                            registration feature that directly outputs student data inputted using php</p>
-                    </div>
-                </a>
-                <div class="technology-project">
-                    <a href="">HTML</a>
-                    <a href="">CSS</a>
-                    <a href="">PHP</a>
-                </div>
-            </div> -->
-
-
-
-            <!-- <div class="field-project">
-                <a href="" class="link-to-project">
-                    <img src="img/project_webbuku.png" alt="">
-                    <div class="field-text-project">
-                        <h3>Bookshelf <span>Apps</span></h3>
-                        <p class="description-project">Create a bookshelf application that functions to monitor books
-                            that
-                            have not been read or books that have been read and add a book search feature in the
-                            bookshelf
-                            list.</p>
-                    </div>
-                </a>
-                <div class="technology-project">
-                    <a href="">HTML</a>
-                    <a href="">CSS</a>
-                    <a href="">JavaScript</a>
-                    <a href="">Web Storage</a>
-                </div>
-            </div> -->
-
-
-
-            <!-- <div class="field-project">
-                <a href="https://fahriprasetya.github.io/ToDoList.github.io/" class="link-to-project">
-                    <img src="img/project_todolist.png" alt="">
-                    <div class="field-text-project">
-                        <h3>To Do List <span>Web Apps</span></h3>
-                        <p class="description-project">Create a to do list web application that functions to add tasks
-                            that
-                            you want to complete through user input. and has a feature to move or delete the task to
-                            another
-                            section if the task has been completed</p>
-                    </div>
-                </a>
-                <div class="technology-project">
-                    <a href="">HTML</a>
-                    <a href="">CSS</a>
-                    <a href="">JavaScript</a>
-                    <a href="">Web Storage</a>
-                </div>
-            </div> -->
-
-
-            <div class="field-project">
-                <a href="https://mukhaerall.github.io/linktree/Linktree/" class="link-to-project">
-                    <img src="img/Cuplikan layar 2024-12-09 213313.png" alt="">
-                    <div class="field-text-project">
-                        <h3>My Social <span>Media Website</span></h3>
-                        <p class="description-project">Create a website that contains profile and information that has
-                            links
-                            to direct to my social media</p>
-                    </div>
-                </a>
-                <div class="technology-project">
-                    <a href="">HTML</a>
-                    <a href="">CSS</a>
-                    <!-- <a href="">JavaScript</a> -->
-                </div>
-            </div>
-
-
-
-            <!-- <div class="field-project">
-                <a href="" class="link-to-project">
-                    <img src="img/project_webdigitalent.png" alt="">
-                    <div class="field-text-project">
-                        <h3>Slicing UI <span>Web Digitalent Kominfo</span></h3>
-                        <p class="description-project">Duplicating one part of the Kominfo Digitalent website to hone my
-                            skills and test my practical abilities in using html and css</p>
-                    </div>
-                </a>
-                <div class="technology-project">
-                    <a href="">HTML</a>
-                    <a href="">CSS</a>
-                </div>
-            </div> -->
-
-
-        </div>
-    </section>
-    <!-- PROJECT -->
-
-    <!--Cerfitication -->
-    <section class="certification" id="certification">
-        <h1>Certi<span>fication</span></h1>
-        <div class="container-certificate">
-            <div class="field-certificate">
-                <img src="img/download.jpeg" alt="" class="img-certificate" data-aos="zoom-in">
-                <i class="fa-solid fa-eye fa-xl icon-eye"></i>
-                <div class="overlay-image-certificate">
-                    <div class="field-overlay-certificate">
-                        <i class="fa-solid fa-chevron-left fa-3x slide-before-image-certificate"></i>
-                        <img src="img/download.jpeg" alt="" class="img-certificate"
-                            id="overlay-image-certificate-1">
-                        <i class="fa-solid fa-chevron-right fa-3x slide-after-image-certificate"></i>
-                        <button>Close</button>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="field-certificate">
-                <img src="img/certificate_dicoding2.png" alt="" class="img-certificate" data-aos="zoom-in">
-                <i class="fa-solid fa-eye fa-xl icon-eye"></i>
-                <div class="overlay-image-certificate">
-                    <div class="field-overlay-certificate">
-                        <i class="fa-solid fa-chevron-left fa-3x slide-before-image-certificate"></i>
-                        <img src="img/certificate_dicoding2.png" alt="" class="img-certificate"
-                            id="overlay-image-certificate-2">
-                        <i class="fa-solid fa-chevron-right fa-3x slide-after-image-certificate"></i>
-                        <button>Close</button>
-                    </div>
-                </div>
-            </div>
-            <div class="field-certificate">
-                <img src="img/certificate_dicoding3.png" alt="" class="img-certificate" data-aos="zoom-in">
-                <i class="fa-solid fa-eye fa-xl icon-eye"></i>
-                <div class="overlay-image-certificate">
-                    <div class="field-overlay-certificate">
-                        <i class="fa-solid fa-chevron-left fa-3x slide-before-image-certificate"></i>
-                        <img src="img/certificate_dicoding3.png" alt="" class="img-certificate"
-                            id="overlay-image-certificate-3">
-                        <i class="fa-solid fa-chevron-right fa-3x slide-after-image-certificate"></i>
-                        <button>Close</button>
-                    </div>
-                </div>
-            </div>
-            <div class="field-certificate">
-                <img src="img/certificate_kominfo.png" alt="" class="img-certificate" data-aos="zoom-in">
-                <i class="fa-solid fa-eye fa-xl icon-eye"></i>
-                <div class="overlay-image-certificate">
-                    <div class="field-overlay-certificate">
-                        <i class="fa-solid fa-chevron-left fa-3x slide-before-image-certificate"></i>
-                        <img src="img/certificate_kominfo.png" alt="" class="img-certificate"
-                            id="overlay-image-certificate-4">
-                        <i class="fa-solid fa-chevron-right fa-3x slide-after-image-certificate"></i>
-                        <button>Close</button>
-                    </div>
-                </div>
-            </div>
-            <div class="field-certificate">
-                <img src="img/certificate_revou.png" alt="" class="img-certificate" data-aos="zoom-in">
-                <i class="fa-solid fa-eye fa-xl icon-eye"></i>
-                <div class="overlay-image-certificate">
-                    <div class="field-overlay-certificate">
-                        <i class="fa-solid fa-chevron-left fa-3x slide-before-image-certificate"></i>
-                        <img src="img/certificate_revou.png" alt="" class="img-certificate"
-                            id="overlay-image-certificate-5">
-                        <i class="fa-solid fa-chevron-right fa-3x slide-after-image-certificate"></i>
-                        <button>Close</button>
-                    </div>
-                </div>
-            </div>
-            <div class="field-certificate">
-                <img src="img/certificate_ptsysteric.jpg" alt="" class="img-certificate" data-aos="zoom-in">
-                <i class="fa-solid fa-eye fa-xl icon-eye"></i>
-                <div class="overlay-image-certificate">
-                    <div class="field-overlay-certificate">
-                        <i class="fa-solid fa-chevron-left fa-3x slide-before-image-certificate"></i>
-                        <img src="img/certificate_ptsysteric.jpg" alt="" class="img-certificate"
-                            id="overlay-image-certificate-6">
-                        <i class="fa-solid fa-chevron-right fa-3x slide-after-image-certificate"></i>
-                        <button>Close</button>
-                    </div>
-                </div>
-            </div>
-            <div class="field-certificate">
-                <img src="img/certificate_DatabaseDesign.png" alt="" class="img-certificate" data-aos="zoom-in">
-                <i class="fa-solid fa-eye fa-xl icon-eye"></i>
-                <div class="overlay-image-certificate">
-                    <div class="field-overlay-certificate">
-                        <i class="fa-solid fa-chevron-left fa-3x slide-before-image-certificate"></i>
-                        <img src="img/certificate_DatabaseDesign.png" alt="" class="img-certificate"
-                            id="overlay-image-certificate-7">
-                        <i class="fa-solid fa-chevron-right fa-3x slide-after-image-certificate"></i>
-                        <button>Close</button>
-                    </div>
-                </div>
-            </div>
-            <div class="field-certificate">
-                <img src="img/certificate_DatabaseProgramming.png" alt="" class="img-certificate" data-aos="zoom-in">
-                <i class="fa-solid fa-eye fa-xl icon-eye"></i>
-                <div class="overlay-image-certificate">
-                    <div class="field-overlay-certificate">
-                        <i class="fa-solid fa-chevron-left fa-3x slide-before-image-certificate"></i>
-                        <img src="img/certificate_DatabaseProgramming.png" alt="" class="img-certificate"
-                            id="overlay-image-certificate-8">
-                        <i class="fa-solid fa-chevron-right fa-3x slide-after-image-certificate"></i>
-                        <button>Close</button>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-    </section>
-    <!--Certification -->
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-        <h1>Con<span>tact</span></h1>
-       <div class="container-contact">
-    <div class="sosmed-and-maps">
-        <div class="domain-and-contact">
-            <div class="domain-contact phone">
-                <a href="https://wa.me/6281289539561/?text=Halo%20saya%20tertarik%20melihat%20portofolio%20Anda%20bisakah%20kita%20bekerja%20sama%3F" target="_blank">
-                    <i class="fab fa-whatsapp icon-domain-and-contact fa-2x"></i> <!-- Ikon WA -->
-                </a>
-                <a href="https://wa.me/6281289539561/?text=Halo%20saya%20tertarik%20melihat%20portofolio%20Anda%20bisakah%20kita%20bekerja%20sama%3F" target="_blank">
-                    <span>+6281289</span>539561
-                </a>
-            </div>
-                    <div class="domain-contact house">
-                        <a
-                            href="https://maps.app.goo.gl/ETwwpcdt34MaTcy16" target="_blank"><i
-                                class="fa-solid fa-location-dot icon-domain-and-contact fa-2x"></i></a>
-                        <a
-                            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.7435226354655!2d119.44435619999999!3d-5.1449333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee38c693cf559%3A0xe69bbff5cd960261!2sAM%20LIMAN!5e0!3m2!1sid!2sid!4v1733607125897!5m2!1sid!2sid" target="_blank"><span>JL
-                                AM LIMAN</span> MAKASSAR </a>
-                    </div>
-                    <div class="domain-contact email">
-                        <a href="mailto:heral.rex@gmail.com" target="_blank"><i
-                                class="fa-regular fa-envelope icon-domain-and-contact fa-2x"></i></a>
-                        <a href="mailto:heral.rex@gmail.com" target="_blank"><span>heral.rex</span>@gmail.com</a>
-                    </div>
-                </div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.7435226354655!2d119.44435619999999!3d-5.1449333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee38c693cf559%3A0xe69bbff5cd960261!2sAM%20LIMAN!5e0!3m2!1sid!2sid!4v1733607125897!5m2!1sid!2sid"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="location-map"></iframe>
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/heral-4009b130b/" target="_blank"><i
-                            class="fa-brands fa-linkedin fa-2x"></i></a>
-                    <a href="https://www.tiktok.com/@mukhaeral" target="_blank"><i
-                            class="fa-brands fa-tiktok fa-2x"></i></a>
-                    <a href="https://www.instagram.com/mukhaerall/" target="_blank"><i
-                            class="fa-brands fa-instagram fa-2x"></i></a>
-                </div>
-            </div>
-
-            <div class="form-message">
-                <h2>Contact <span>Me</span></h2>
-                <form action="">
-                    <label for="name"></label>
-                    <input type="text" id="name" placeholder="Name">
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="Email">
-                    <label for="message"></label>
-                    <textarea name="message" id="message" placeholder="Message" rows="10"></textarea>
-                    <button type="submit" class="send-contact">Send</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <!-- CONTACT -->
-
-    <!-- AOS ANIMATION JAVASCRIPT -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- AOS ANIMATION JAVASCRIPT -->
-
-    <!-- SWEET ALERT -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <!-- MY SCRIPT -->
-    <script src="js/script.js"></script>
-
+    </footer>
 </body>
 
 </html>
